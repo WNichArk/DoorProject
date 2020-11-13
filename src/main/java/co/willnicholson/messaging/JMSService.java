@@ -8,6 +8,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class JMSService {
 
+    @JmsListener(destination = "wirelessmsgs")
+    public void listen(String message){
 
+    }
 
 }
